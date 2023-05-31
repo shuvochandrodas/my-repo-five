@@ -19,12 +19,15 @@ a{
 /* Top Player Section Style  */
 main{
     display:flex;
-    justify-content:center;
+    flex-direction:column;
+    align-items:center;
 }
 .container{
     width:870px;
     background-color:#fff;
     padding:30px;
+    margin-top:20px;
+    border-radius:5px;
 }
 .top-players{
     
@@ -74,4 +77,42 @@ main{
 }
 .blog .blog-info .autor-by{
     color:#999898;
+}
+/*Lattest Course Style  */
+.courses{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    column-gap:20px;
+}
+.course .course-thumbnail img{
+    width:224px;
+    height:104px;
+}
+.about-course .course-instructor{
+    color:#ED6B4F;
+    font-size:14.5px;
+}
+.about-course .course-title{
+    font-size:20px;
+}
+.course .course-info{
+    display:flex;
+    justify-content:space-between;
+}
+.course-info .course-rating .fa-star-solid{
+    color:gold;
+}
+.course-info .course-rating .fa-star-empty{
+    color:#ddd;
+}
+.course-info .course-rating .course-rating-number{
+    margin-left:5px;
+    color:#ddd;
+}
+.course-duration a{
+    background-color:#f1cdc5;
+    color: #ED6B4F;
+    padding: 5px 5px;
+    border-radius: 1000px;
+    margin-right:5px;
 }
