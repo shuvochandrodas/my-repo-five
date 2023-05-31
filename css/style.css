@@ -29,9 +29,6 @@ main{
     margin-top:20px;
     border-radius:5px;
 }
-.top-players{
-    
-}
 .section-title{
     margin-bottom:35px;
     color:#562EFF;
@@ -115,4 +112,123 @@ main{
     padding: 5px 5px;
     border-radius: 1000px;
     margin-right:5px;
+}
+
+
+/* Responsive Web Stylesheet */
+@media screen and (max-width:620px){
+    .container{
+        width:100%;
+    }
+    .section-title{
+        text-align:center;
+    }
+    .players{
+        grid-template-columns:repeat(1,1fr);
+    }
+    .player{
+        align-items:center;
+        justify-content:center;
+        flex-direction:column;
+    }
+    .players .player img{
+        width:80px;
+        height:80px;
+    }
+
+    .blogs{
+        grid-template-columns:repeat(1,1fr);
+    }
+    .blog{
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+    .courses{
+        grid-template-columns:repeat(1,1fr);
+    }
+    .course{
+        align-items:center;
+        justify-content:center;
+    }
+    .course .course-info {
+        flex-direction: column;
+    }
+    .course-duration{
+        margin:15px 0;
+    }
+}
+
+
+@media screen and (min-width:621px) and (max-width:768px) {
+    .container{
+        width:100%;
+    }
+    .section-title{
+        text-align:center;
+    }
+    .players{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .player{
+        align-items:center;
+        justify-content:center;
+    }
+    .players .player img{
+        width:80px;
+        height:80px;
+    }
+
+    .blogs{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .blog{
+        justify-content:center;
+        align-items:center;
+    }
+    .courses{
+        grid-template-columns:repeat(2,1fr);
+        row-gap:20px;
+    }
+    .course{
+        align-items:center;
+        justify-content:center;
+    }
+    
+}
+@media screen and (min-width:769px) and (max-width:992px) {
+    .container{
+        width:100%;
+    }
+    .section-title{
+        text-align:center;
+    }
+    .players{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .player{
+        align-items:center;
+        justify-content:center;
+    }
+    .players .player img{
+        width:80px;
+        height:80px;
+    }
+
+    .blogs{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .blog{
+        justify-content:center;
+        align-items:center;
+    }
+    .courses{
+        grid-template-columns:repeat(2,1fr);
+        row-gap:20px;
+    }
+    .course{
+        align-items:center;
+        justify-content:center;
+    }
+    
 }
